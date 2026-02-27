@@ -1,0 +1,35 @@
+| MPU6050 Pin | Connect To Arduino    |
+| ----------- | --------------------- |
+| VCC         | 5V                    |
+| GND         | GND                   |
+| SDA         | A4                    |
+| SCL         | A5                    |
+| INT         | (leave empty for now) |
+
+
+| BMP280 Pin | Connect To Arduino |
+| ---------- | ------------------ |
+| VCC        | 3.3V (recommended) |
+| GND        | GND                |
+| SDA        | A4                 |
+| SCL        | A5                 |
+
+
+
+Arduino A4  ─────┬── MPU6050 SDA
+                  └── BMP280 SDA
+
+Arduino A5  ─────┬── MPU6050 SCL
+                  └── BMP280 SCL
+
+Arduino GND ─────┬── MPU6050 GND
+                  └── BMP280 GND
+
+
+
+Full Power Setup 
+| Arduino Pin | Connect To   |
+| ----------- | ------------ |
+| 5V          | MPU6050 VCC  |
+| 3.3V        | BMP280 VCC   |
+| GND         | All GND pins |
